@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <!-- Tailwind CSS CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Script -->
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-green-500 h-screen flex items-center justify-center">
+    <div class="bg-white rounded-lg shadow-lg p-10 w-full max-w-md flex flex-col gap-5">
+        <div>
+            <h1 class="text-3xl text-center">Registration Form</h1>
+        </div>
+        <form id="registrationForm" class="flex flex-col gap-5">
+            <div class="flex flex-col">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" class="border border-solid border-blue-400 rounded p-1  focus:outline-none">
+                <div class="error text-red-500 text-sm" id="nameError"></div> 
+            </div>
+            <div class="flex flex-col">
+                <label for="email">Email</label>
+                <input type="email" id="email" class="border border-solid border-blue-400 rounded p-1  focus:outline-none">
+                <div class="error text-red-500 text-sm" id="emailError"></div>
+            </div>
+            <div class="flex flex-col">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="border border-solid border-blue-400 rounded p-1  focus:outline-none">
+                <div class="error text-red-500 text-sm" id="passwordError"></div>
+            </div>
+            <button id="btn" class="text-white mt-10 bg-purple-900 border rounded p-2" disabled>Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+</body>
+</html>
