@@ -52,5 +52,9 @@ document.addEventListener('DOMContentLoaded', function(){
         if (submitButton.disabled) {
             event.preventDefault();
         }
+        else {
+            // Show an alert message when form is submitted
+            alert('Form submitted successfully!');
+        }
     });
 });
